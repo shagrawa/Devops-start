@@ -10,4 +10,3 @@ COPY -rvf fregg-html/* .
 RUN rm -rf fregg.zip
 CMD["/usr/sbin/apache2ctl","-D","FOREGROUND"]
 EXPOSE 80
-Meaning
