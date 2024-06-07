@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
     unzip
 
 # Add the website files
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page290/fregg.zip /var/www/html/
+RUN curl -L https://www.free-css.com/assets/files/free-css-templates/download/page290/fregg.zip -o /var/www/html/fregg.zip
 
 # Change working directory
 WORKDIR /var/www/html
