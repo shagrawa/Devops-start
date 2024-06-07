@@ -20,7 +20,7 @@ RUN unzip simply-amazed.zip && \
     rm -rf simply-amazed.zip
 
 # Start Apache in the foreground
-CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+CMD ["apachectl", "-D", "FOREGROUND"]
 
 # Expose the port
 EXPOSE 80
