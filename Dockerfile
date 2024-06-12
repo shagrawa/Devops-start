@@ -23,5 +23,5 @@ RUN unzip simply-amazed.zip && \
 CMD ["apachectl", "-D", "FOREGROUND"]
 
 # Expose the port
-EXPOSE 80
+EXPOSE 81
 
